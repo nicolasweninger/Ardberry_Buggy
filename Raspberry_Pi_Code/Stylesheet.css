@@ -1,0 +1,117 @@
+body {
+    background-color: #D8D8D8;
+}
+
+#container {
+/*    display: block;*/
+    max-width: 1300px;
+    min-width: 1050px;
+    margin: 20px auto;  
+}
+
+/*---------VIDEO SECTION---------------*/
+
+#container .video {
+    height: 400px;
+    position: relative;
+}
+
+#vid_wrapper {
+    margin: 0 auto;
+    height: 100%;
+    width: 600px;
+    background-color: black;
+    position: relative;
+}
+
+#vid_wrapper img {
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--------CONTROL SECTION-----------*/
+#container .controls {
+    height: 250px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#container .columns3 {
+    width: 33%;
+    height: 100%;
+    float: left;
+    margin-top: 10px;
+/*    border: 1px solid black;*/
+    position: relative;
+}
+
+#output1 {
+    color: red;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#output2 {
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#inputform .inputline {
+    text-align: center;
+}
+
+#inputform .inputline .textin{
+    text-align: center;
+}
+/*--------CONTROL ARROWS--------------*/
+
+#container .title {
+    height: 9%;
+}
+
+#titlebuffer{
+    height: 6px;
+}
+
+#container .row3 {
+    height: 30%;
+    clear: both;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#container .controls img {
+    height: 100%;
+    width: auto;
+/*    border: 1px solid black;*/
+}
+
+#container .controls img:active {
+    border: 1px solid red;
+}
+
+.arrow_up, .arrow_down {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arrow_left {
+    padding-left: 10%;
+    float: left;
+}
+
+.arrow_right {
+    padding-right: 10%;
+    float: right;
+}
+
+#container .controls .title p {
+    text-align: center;
+    font-family: helvetica;
+}

@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ardberry Controls</title>
+        <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+    </head>
+
+    <body ontouchstart="" >
+        <div id="container">
+            
+            <div class="video">
+                <div id="vid_wrapper">
+                    <div><img id="mjpeg_dest" /></div>
+                
+                </div>
+            </div>
+            
+            <div class="controls">
+                <div class = "columns3">
+                    <div class="title"><p>Buggy</p></div>
+                    <div id="titlebuffer"></div>
+                    <div class = "row3">
+                        <img class="arrow_up" id="buggyUp" src="img/arrow-up.png"/>
+                    </div>
+                    <div class="row3">
+                        <img class="arrow_left" id="buggyLeft" src="img/arrow-left.png"/>
+                        <img class="arrow_right" id="buggyRight" src="img/arrow-right.png"/>
+                    </div>
+                    <div class="row3">
+                        <img class="arrow_down" id="buggyDown" src="img/arrow-down.png"/>
+                    </div>
+                </div>
+                    
+                <div class = "columns3">
+                    <div id="output1">
+                        0cm
+                    </div>
+                    <div id="output2">
+                        Ping to connect to buggy...
+                    </div>
+                    <div id="inputform">
+                        <br />
+                        <div class="inputline">
+                            <input type="button" value="left " id="leftButton" onclick="leftMove(1)"/>
+                            <input type="number" class="textin" id="rotationText"/>
+                            <input type="button" value="right" id="rightButton" onclick="rightMove(1)"/>
+                        </div><br />
+                        <div class="inputline">
+                            <input type="button" value="forwards " id="forwardsButton" onclick="forwardMove(1)" />
+                            <input type="number" class="textin" id="linearText"/>
+                            <input type="button" value="backward" id="backwardButton" onclick="backwardMove(1)"/>
+                        </div> <br />
+                        <div class="inputline">
+                            <input type="button" value="Camera Reset" onclick="resetCam()"/>
+                            <input type="button" value="Get Distance" onclick="getDistance()"/>
+                            <input type="button" value="Ping" onclick="ping()"/>
+                        </div><br />   
+                    </div>
+                </div>
+                    
+                <div class = "columns3">
+                    <div class="title"><p>Camera</p></div>
+                    <div id="titlebuffer"></div>
+                    <div class = "row3">
+                        <img class="arrow_up" id="servoUp" src="img/arrow-up.png"/>
+                    </div>
+                    <div class="row3">
+                        <img class="arrow_left" id="servoLeft" src="img/arrow-left.png"/>
+                        <img class="arrow_right" id="servoRight" src="img/arrow-right.png"/>
+                    </div>
+                    <div class="row3">
+                        <img class="arrow_down" id="servoDown" src="img/arrow-down.png"/>
+                    </div>
+                </div>
+                    
+            </div>
+            
+        </div>
+    </body>
+    <script type="text/javascript" src="script.js"></script>
+</html>
